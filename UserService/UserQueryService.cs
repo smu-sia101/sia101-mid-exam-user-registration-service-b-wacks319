@@ -42,8 +42,10 @@ namespace Exam.UserManager.Service
             {
                 //***
                 //TODO: Item 1: Implement the logic to get all users
-                IEnumerable<UserModel> user = null;
-                //***
+                //done
+                IEnumerable<UserModel> user = _userRepository.Get();
+                
+               
 
                 if (user == null || !user.Any())
                 {
